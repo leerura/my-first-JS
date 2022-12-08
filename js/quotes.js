@@ -13,7 +13,6 @@ let quotes = [
     "김준성, 게임 대신 코딩 프로그램 키는 게 그렇게 어렵냐?" ,
     "김준성, 나도 하는데 니가 못하겠냐?"] 
 
-let random = quotes[Math.floor(Math.random() * quotes.length)];
 function hey() { 
     let random = quotes[Math.floor(Math.random() * quotes.length)];
     WhatIwantToSay.innerText = random }

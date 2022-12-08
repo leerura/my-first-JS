@@ -3,6 +3,7 @@ const loginForm = document.querySelector("#login-form");
 const wel = document.querySelector("#welcome");
 const HIDDEN = "hidden"
 const USERNAME = "Username"
+const ToDoForm = document.getElementById("todo-form")
 
 
 function takeTheNameSubmit(event) {
@@ -24,4 +25,5 @@ if (localStorage.getItem(USERNAME) === null) {
     let Un = localStorage.getItem(USERNAME);
     wel.classList.remove(HIDDEN);
     wel.innerText = "Hello, " + Un;
+    ToDoForm.classList.remove(HIDDEN)
 }

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Momentum App</title>
 </head>
-<body>
+<body id="body">
 <h2 id="clock">00:00:00</h2>
 <form id="login-form" class="hidden">
   <input
@@ -20,8 +20,18 @@
 </form>
 <h1 id="welcome" class="hidden"></h1>
 <h3 id="saying"></h3>
+<form id="todo-form" class="hidden">
+  <input 
+    type="text"
+    required
+    placeholder="Write a To Do and Press Enter">
+  <input type="submit" value="입력" id="todo-button"> 
+   <ul id="todo-list"></ul> 
+</form>
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/to do list.js"></script>
 </body>
 </html>
