@@ -1,2 +1,2 @@
 const backgroundImage = document.getElementById("body")
-backgroundImage.className = "b" + Math.floor(Math.random() * 4)
+backgroundImage.className = "b" + Math.floor(Math.random() * 3)

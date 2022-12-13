@@ -14,6 +14,7 @@ function takeTheNameSubmit(event) {
     wel.classList.remove(HIDDEN);
     wel.innerText = "Hello, " + Name;
     localStorage.setItem(USERNAME, Name);
+    ToDoForm.classList.remove(HIDDEN)
 } //"Hello " + username; = `Hello ${username};
 
 
